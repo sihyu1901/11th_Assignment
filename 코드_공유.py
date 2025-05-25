@@ -24,7 +24,7 @@ train_input, test_input, train_target, test_target = train_test_split(feature,
 
 from sklearn.model_selection import GridSearchCV
 from sklearn.tree import DecisionTreeClassifier
-params_DC = {'criterion' : ['gini', 'entropy'], 'max_depth' : [2,5], 'min_samples_split' : [2, 10], 'min_samples_leaf' : [1,2,4]}
+params_DC = {'criterion' : ['gini', 'entropy'], 'max_depth' : [2,3,4,5], 'min_samples_split' : [2,5,10], 'min_samples_leaf' : [1,2,4]}
 gs_DT = GridSearchCV(DecisionTreeClassifier(random_state = 42), params_DC, scoring='accuracy') 
 
 
