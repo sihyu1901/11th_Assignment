@@ -69,3 +69,4 @@ plt.ylabel('Importance')
 plt.xticks(rotation = 45,size = 9)
 plt.title('Feature Importance')
 
+정리
